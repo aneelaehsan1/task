@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+   marquee{
+    color: gray;
+    margin-top: 50px;
+   }
+    *{
+  margin: 0; padding: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.cm-e-menu {
+	background-color: #222;
+	position: relative;
+	z-index: 1000;
+	color: #fff;
+	font-weight: 200;
+	box-shadow: 0 0 10px black;
+    text-align: center;
+	}
+.cm-e-menu ul {
+	margin: 0; padding: 0;
+}
+.cm-e-menu li {
+	position: relative;
+	white-space: nowrap;
+	cursor: pointer;
+	text-transform: capitalize !important;
+	list-style: none;
+
+	-webkit-transition: background-color ease-in 300ms;
+	-moz-transition: background-color ease-in 300ms;
+	-ms-transition: background-color ease-in 300ms;
+	-o-transition: background-color ease-in 300ms;
+	transition: background-color ease-in 300ms;
+}
+.cm-e-menu li:hover {
+	background-color: #8a8a8a;
+	text-shadow: 0 10px 10px #222;
+}
+
+.cm-e-menu ul li.topmenu {
+	display: inline-table;
+	padding: .3em 1em;
+}
+.cm-e-menu .topmenu ul {
+	display:none;
+	position: absolute;
+	background-color: #222;
+}
+.cm-e-menu li:hover > ul {
+	display: table;
+}
+.cm-e-menu ul.submenu {
+	top: 100%; left: 0;
+	padding-top: .5em;
+	padding-bottom: .5em;	
+	box-shadow: 0 0 10px black;
+}
+.cm-e-menu ul.submenu .submenu {
+	top: -.5em; left: 100%;
+	font-size: 1em
+}
+.cm-e-menu ul.submenu li {
+	padding: .2em 1.5em;
+	font-size: .9rem;
+}
+.cm-e-menu ul li.topmenu i {
+    color: white !important;
+}
+   </style>
+  </head>
+  <body>
+    <div class="cm-e-menu">
+        <ul>
+            <li class="topmenu">
+                <a>file</a>
+            <li class="topmenu">
+                <a>edit</a>
+             
+            </li>
+        
+                
+            </li>
+            <li class="topmenu">
+                <a>view</a>
+            </li>
+            <li class="topmenu"><a>find</a></li>
+            <li class="topmenu">
+                <a>help</a>
+            </li>
+            <li class="topmenu">
+                <a>settings<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+                <ul class="submenu">
+                    <li>
+                        <a>indentation</a>
+                        <ul class="submenu">
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a>font</a>
+                        <ul class="submenu">
+                            <li><a>larger</a></li>
+                            <li><a>smaller</a></li
+                        </ul>
+                    </li>
+                
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <marquee width="100%" direction="up" height="700px">
+        This is a sample scrolling text that has scrolls in the upper direction. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ad veritatis quo eaque tempore porro qui consequuntur, ipsa delectus nesciunt reprehenderit repellat cumque eius ut, mollitia nam veniam culpa doloremque?
+        </marquee>
+  </body>
+</html>
